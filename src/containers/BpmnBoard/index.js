@@ -113,7 +113,12 @@ export default class extends Component {
   };
 
   handleSaveFile = () => {
-
+    this.bpmnModeler.saveXML({ format: true }, (err, xml) => {
+      console.log(xml);
+      var FileSaver = require('file-saver');
+      var blob = new Blob([xml], {type: "application/bpmn20-xml;charset=utf-8"});
+      FileSaver.saveAs(blob, `${Date.now()}.bpmn`);
+    });
   };
 
   handleSaveImage = () => {
@@ -150,6 +155,7 @@ export default class extends Component {
           multiple={false}
           ref={(ref) => this.upload = ref}
           style={{display: 'none'}}
+          accept={".bpmn"}
           onChange={this.onChangeFile.bind(this)}
         />
         <FileControls

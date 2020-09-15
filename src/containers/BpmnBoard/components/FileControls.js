@@ -29,12 +29,8 @@ export default ({ onOpen, onCreate, onSaveFile, onSaveImage }) => (
           onClick={onSaveFile}
           target="_blank"
           rel="noopener noreferrer"
-          href="data:application/bpmn20-xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Cbpmn%3Adefinitions%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Abpmn%3D%22http%3A%2F%2Fwww.omg.org%2Fspec%2FBPMN%2F20100524%2FMODEL%22%20xmlns%3Abpmndi%3D%22http%3A%2F%2Fwww.omg.org%2Fspec%2FBPMN%2F20100524%2FDI%22%20xmlns%3Adc%3D%22http%3A%2F%2Fwww.omg.org%2Fspec%2FDD%2F20100524%2FDC%22%20id%3D%22Definitions_0mssz0j%22%20targetNamespace%3D%22http%3A%2F%2Fbpmn.io%2Fschema%2Fbpmn%22%3E%0A%20%20%3Cbpmn%3Aprocess%20id%3D%22Process_1%22%20isExecutable%3D%22false%22%3E%0A%20%20%20%20%3Cbpmn%3AstartEvent%20id%3D%22StartEvent_1%22%20%2F%3E%0A%20%20%3C%2Fbpmn%3Aprocess%3E%0A%20%20%3Cbpmndi%3ABPMNDiagram%20id%3D%22BPMNDiagram_1%22%3E%0A%20%20%20%20%3Cbpmndi%3ABPMNPlane%20id%3D%22BPMNPlane_1%22%20bpmnElement%3D%22Process_1%22%3E%0A%20%20%20%20%20%20%3Cbpmndi%3ABPMNShape%20id%3D%22_BPMNShape_StartEvent_2%22%20bpmnElement%3D%22StartEvent_1%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3ABounds%20x%3D%22173%22%20y%3D%22102%22%20width%3D%2236%22%20height%3D%2236%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Fbpmndi%3ABPMNShape%3E%0A%20%20%20%20%3C%2Fbpmndi%3ABPMNPlane%3E%0A%20%20%3C%2Fbpmndi%3ABPMNDiagram%3E%0A%3C%2Fbpmn%3Adefinitions%3E%0A"
           className="download"
           title="download BPMN diagram"
-          jswidget="downloadBPMN"
-          data-track="diagram:download-bpmn"
-          download="diagram.bpmn"
         >
           <span className="icon-download" />
         </a>
